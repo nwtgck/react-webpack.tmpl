@@ -1,5 +1,6 @@
 {{- /* **NOTE: This  template comment will be removed by [`tmpl`].**
 # react-webpack.tmpl
+[![Build Status](https://travis-ci.com/nwtgck/react-webpack.tmpl.svg?branch=master)](https://travis-ci.com/nwtgck/react-webpack.tmpl)
 
 Template of [React] with [Babel] & [webpack]
 
