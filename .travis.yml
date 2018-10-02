@@ -1,0 +1,17 @@
+# (from: https://github.com/codecov/example-node/blob/master/.travis.yml)
+language: node_js
+sudo: false
+node_js:
+  - "10"
+  - "8"
+  - "6"
+install:
+  # Install tmpl
+  - go get -u github.com/nwtgck/tmpl
+script: 
+  # Fill variables by tmpl
+  - |
+    tmpl fill --fill-yaml="{project_name: myproject, description: 'My Project', keywords: [http, server, example]}"
+  - npm install
+  # Just build
+  - npm run build
